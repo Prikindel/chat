@@ -7,6 +7,6 @@ Use technology:
 - Kotlin;
 - MVVM;
 - Clean Architecture;
-- Courutines;
+- Coroutines;
 
 Link to the app in Google Play:
