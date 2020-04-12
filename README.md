@@ -1,4 +1,4 @@
-# char-messanger
+# Chat-messanger
 
 Android app "chat messenger" for users to communicate. The project is designed to hone your skills.
 
