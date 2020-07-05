@@ -1,4 +1,4 @@
-package com.invaderprogrammer.android.chat.ui.fragment
+package com.invaderprogrammer.android.chat.ui.core
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,8 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.invaderprogrammer.android.chat.R
 import com.invaderprogrammer.android.chat.domain.type.Failure
-import com.invaderprogrammer.android.chat.ui.activity.BaseActivity
-import com.invaderprogrammer.android.chat.ui.activity.base
+import com.invaderprogrammer.android.chat.ui.core.navigation.Navigator
 import javax.inject.Inject
 
 abstract class BaseFragment : Fragment() {
@@ -21,7 +20,8 @@ abstract class BaseFragment : Fragment() {
     open val titleToolbar = R.string.app_name
     open val showToolbar = true
 
-
+    @Inject
+    lateinit var navigator: Navigator
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory

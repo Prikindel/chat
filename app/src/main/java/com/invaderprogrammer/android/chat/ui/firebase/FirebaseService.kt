@@ -1,4 +1,4 @@
-package com.invaderprogrammer.android.chat.ui.service
+package com.invaderprogrammer.android.chat.ui.firebase
 
 import android.util.Log
 import com.google.firebase.messaging.FirebaseMessagingService

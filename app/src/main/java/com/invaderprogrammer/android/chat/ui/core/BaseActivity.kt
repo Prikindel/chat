@@ -1,4 +1,4 @@
-package com.invaderprogrammer.android.chat.ui.activity
+package com.invaderprogrammer.android.chat.ui.core
 
 import android.app.Activity
 import android.content.Context
@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.invaderprogrammer.android.chat.R
 import com.invaderprogrammer.android.chat.domain.type.Failure
-import com.invaderprogrammer.android.chat.ui.fragment.BaseFragment
+import com.invaderprogrammer.android.chat.ui.core.navigation.Navigator
 import kotlinx.android.synthetic.main.toolbar.*
 import javax.inject.Inject
 
@@ -25,9 +25,14 @@ abstract class BaseActivity : AppCompatActivity() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
+    @Inject
+    lateinit var navigator: Navigator
+
+    open val contentId = R.layout.activity_layout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_layout)
+        setContentView(contentId)
 
         setSupportActionBar(toolbar)
         addFragment(savedInstanceState)
@@ -69,6 +74,8 @@ abstract class BaseActivity : AppCompatActivity() {
             is Failure.NetworkConnectionError -> showMessage(getString(R.string.error_network))
             is Failure.ServerError -> showMessage(getString(R.string.error_server))
             is Failure.EmailAlreadyExistError -> showMessage(getString(R.string.error_email_already_exist))
+            is Failure.AuthError -> showMessage(getString(R.string.error_auth))
+            is Failure.TokenError -> navigator.showLogin(this)
         }
     }
 
@@ -89,3 +96,4 @@ inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> Fragmen
 inline fun Activity?.base(block: BaseActivity.() -> Unit) {
     (this as? BaseActivity)?.let(block)
 }
+

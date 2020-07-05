@@ -1,4 +1,4 @@
-package com.invaderprogrammer.android.chat.ui.ext
+package com.invaderprogrammer.android.chat.ui.core.ext
 
 
 import androidx.lifecycle.LifecycleOwner
