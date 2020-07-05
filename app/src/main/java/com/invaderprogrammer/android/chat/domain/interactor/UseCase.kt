@@ -1,7 +1,7 @@
 package com.invaderprogrammer.android.chat.domain.interactor
 
 import com.invaderprogrammer.android.chat.domain.type.Either
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 

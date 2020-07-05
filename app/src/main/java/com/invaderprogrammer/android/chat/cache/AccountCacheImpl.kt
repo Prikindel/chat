@@ -3,7 +3,7 @@ package com.invaderprogrammer.android.chat.cache
 import com.invaderprogrammer.android.chat.data.account.AccountCache
 import com.invaderprogrammer.android.chat.domain.type.Either
 import com.invaderprogrammer.android.chat.domain.type.None
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import javax.inject.Inject
 
 class AccountCacheImpl @Inject constructor(private val prefsManager: SharedPrefsManager) : AccountCache {

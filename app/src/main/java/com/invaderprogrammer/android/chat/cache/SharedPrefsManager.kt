@@ -3,7 +3,7 @@ package com.invaderprogrammer.android.chat.cache
 import android.content.SharedPreferences
 import com.invaderprogrammer.android.chat.domain.type.Either
 import com.invaderprogrammer.android.chat.domain.type.None
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import javax.inject.Inject
 
 class SharedPrefsManager @Inject constructor(private val prefs: SharedPreferences) {

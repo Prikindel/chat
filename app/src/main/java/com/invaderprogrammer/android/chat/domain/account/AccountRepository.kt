@@ -2,7 +2,7 @@ package com.invaderprogrammer.android.chat.domain.account
 
 import com.invaderprogrammer.android.chat.domain.type.None
 import com.invaderprogrammer.android.chat.domain.type.Either
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 
 interface AccountRepository {
     fun login(email: String, password: String): Either<Failure, AccountEntity>

@@ -1,22 +1,17 @@
 package com.invaderprogrammer.android.chat.ui.fragment
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.InputMethodManager
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.invaderprogrammer.android.chat.R
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import com.invaderprogrammer.android.chat.ui.activity.BaseActivity
 import com.invaderprogrammer.android.chat.ui.activity.base
-import kotlinx.android.synthetic.main.toolbar.*
 import javax.inject.Inject
 
 abstract class BaseFragment : Fragment() {

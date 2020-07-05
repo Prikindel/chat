@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.invaderprogrammer.android.chat.R
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import com.invaderprogrammer.android.chat.ui.fragment.BaseFragment
 import kotlinx.android.synthetic.main.toolbar.*
 import javax.inject.Inject

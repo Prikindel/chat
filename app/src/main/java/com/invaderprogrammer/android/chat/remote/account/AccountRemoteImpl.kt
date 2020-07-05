@@ -3,7 +3,7 @@ package com.invaderprogrammer.android.chat.remote.account
 import com.invaderprogrammer.android.chat.data.account.AccountRemote
 import com.invaderprogrammer.android.chat.domain.type.Either
 import com.invaderprogrammer.android.chat.domain.type.None
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import com.invaderprogrammer.android.chat.remote.core.Request
 import com.invaderprogrammer.android.chat.remote.service.ApiService
 import javax.inject.Inject

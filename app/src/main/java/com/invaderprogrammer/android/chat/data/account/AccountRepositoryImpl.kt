@@ -4,7 +4,7 @@ import com.invaderprogrammer.android.chat.domain.account.AccountEntity
 import com.invaderprogrammer.android.chat.domain.account.AccountRepository
 import com.invaderprogrammer.android.chat.domain.type.Either
 import com.invaderprogrammer.android.chat.domain.type.None
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import com.invaderprogrammer.android.chat.domain.type.flatMap
 import java.util.*
 

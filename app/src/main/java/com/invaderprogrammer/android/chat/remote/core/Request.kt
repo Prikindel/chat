@@ -1,7 +1,7 @@
 package com.invaderprogrammer.android.chat.remote.core
 
 import com.invaderprogrammer.android.chat.domain.type.Either
-import com.invaderprogrammer.android.chat.domain.type.exception.Failure
+import com.invaderprogrammer.android.chat.domain.type.Failure
 import retrofit2.Call
 import retrofit2.Response
 import javax.inject.Inject

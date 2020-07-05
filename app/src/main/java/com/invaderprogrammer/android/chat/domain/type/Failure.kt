@@ -1,4 +1,4 @@
-package com.invaderprogrammer.android.chat.domain.type.exception
+package com.invaderprogrammer.android.chat.domain.type
 
 /**
  * Base Class for handling errors/failures/exceptions.
@@ -7,6 +7,10 @@ package com.invaderprogrammer.android.chat.domain.type.exception
 sealed class Failure {
     object NetworkConnectionError : Failure()
     object ServerError : Failure()
+    object AuthError : Failure()
+    object TokenError : Failure()
 
     object EmailAlreadyExistError : Failure()
+
+    object NoSavedAccountsError : Failure()
 }
